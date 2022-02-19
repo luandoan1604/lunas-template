@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500&display=swap");
+* {
+  font-family: "Nunito", sans-serif;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 9rem;
+}
+html::-webkit-scrollbar {
+  width: 1rem;
+}
+html::-webkit-scrollbar-track {
+  background: transparent;
+}
+html::-webkit-scrollbar-thumb {
+  background: #29d9d5;
+}
+
+body {
+  background: black;
+}
+
+section {
+  padding: 3rem 9%;
+}
+
+.container .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(23rem, 1fr));
+  gap: 2rem;
+}
+.container .box-container .box {
+  border-radius: 1rem;
+  overflow: hidden;
+  border: 0.4rem solid #29d9d5;
+}
+.container .box-container .box:hover img {
+  transform: scale(1.1);
+}
+.container .box-container .box .image {
+  height: 100%;
+  overflow: hidden;
+  width: 100%;
+  text-align: center;
+}
+.container .box-container .box .image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+/*# sourceMappingURL=app.css.map */

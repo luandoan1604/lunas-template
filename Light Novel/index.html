@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete Light Novel</title>
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+    <section class="container">
+        <div class="box-container" id="lightnovel">
+            <script>
+                const url = "http://localhost:3000/lightnovel";
+                fetch(url)
+                    .then((res) => res.json())
+                    .then((data) => {
+                        data.forEach((novel) => {
+                            renderNovel(novel);
+                        });
+                    });
+                const showNovel = document.getElementById("lightnovel");
+                const renderNovel = (novel) => {
+                    const output = 
+                    `<div class="box">
+                        <div class="image">
+                            <a href="${novel.link}"><img src="images/${novel.image}" alt=""></a>
+                        </div>
+                    </div>`;
+                    showNovel.insertAdjacentHTML("beforeend", output);
+                };
+            </script>
+        </div>
+    </section>
+</body>
+</html>
