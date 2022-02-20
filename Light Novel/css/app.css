@@ -1,6 +1,52 @@
-@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap");
+.container-lightnovel {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 2rem;
+}
+.container-lightnovel .box {
+  border: 0.4rem solid #29d9d5;
+  overflow: hidden;
+  border-radius: 2rem;
+}
+.container-lightnovel .box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.container-novel {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+  gap: 2rem;
+  margin-top: 4rem;
+}
+.container-novel .container-novel-left {
+  background: green;
+  text-align: center;
+  border: 0.7rem solid yellow;
+  border-radius: 2rem;
+}
+.container-novel .container-novel-left h4 {
+  font-size: 2rem;
+  color: yellow;
+}
+.container-novel .container-novel-right {
+  background: palevioletred;
+  text-align: center;
+  border: 0.7rem solid yellow;
+  border-radius: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  gap: 2rem;
+}
+.container-novel .container-novel-right h4 {
+  font-size: 2rem;
+  color: yellow;
+}
+
 * {
-  font-family: "Nunito", sans-serif;
+  font-family: "Open Sans", sans-serif;
   margin: 0;
   padding: 0;
   outline: none;
@@ -12,8 +58,8 @@
 
 html {
   font-size: 62.5%;
-  overflow-x: hidden;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 html::-webkit-scrollbar {
   width: 1rem;
@@ -26,60 +72,11 @@ html::-webkit-scrollbar-thumb {
 }
 
 body {
-  background: gray;
+  background: black;
 }
 
-section {
-  padding: 3rem 7%;
-}
-
-.container .box-container-lightnovel {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-  gap: 2rem;
-}
-.container .box-container-lightnovel .box {
-  border-radius: 2rem;
-  overflow: hidden;
-  border: 0.4rem solid #29d9d5;
-}
-.container .box-container-lightnovel .box .image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  overflow: hidden;
-}
-.container .box-container-lightnovel .box .image img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-}
-.container .box-container-novel {
-  margin-top: 2rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1rem;
-  text-align: center;
-  border: 0.4rem solid yellow;
-  border-radius: 2rem;
-  overflow: hidden;
-}
-.container .box-container-novel .box-container-novel-left {
-  background: green;
-}
-.container .box-container-novel .box-container-novel-left h4 {
-  font-size: 2rem;
-  color: yellow;
-}
-.container .box-container-novel .box-container-novel-right {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 2rem;
-  background: palevioletred;
-}
-.container .box-container-novel .box-container-novel-right h4 {
-  font-size: 2rem;
-  color: yellow;
+.container {
+  padding: 4rem 7%;
 }
 
 /*# sourceMappingURL=app.css.map */

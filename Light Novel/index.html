@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="css/app.css">
 </head>
 <body>
-    <section class="container">
-        <div class="box-container-lightnovel" id="lightnovel">
+    <div class="container">
+        <div class="container-lightnovel" id="lightnovel">
             <script>
                 const url = "http://localhost:3000/lightnovel";
                 fetch(url)
@@ -23,23 +23,25 @@
                 const renderNovel = (novel) => {
                     const output = 
                     `<div class="box">
-                        <div class="image">
-                            <a href="${novel.link}"><img src="images/${novel.image}" alt=""></a>
-                        </div>
+                        <a href="${novel.link}">
+                            <img src="images/${novel.image}" alt="">
+                        </a>
                     </div>`;
                     showNovel.insertAdjacentHTML("beforeend", output);
                 };
             </script>
         </div>
-        <div class="box-container-novel">
-            <div class="box-container-novel-left">
-                <h4>12 nữ thần(5)</h4>
+        <div class="container-novel">
+            <div class="container-novel-left">
+                <h4>12 nữ thần(20)</h4>
                 <h4>con đường bá chủ()</h4>
             </div>
-            <div class="box-container-novel-right">
+            <div class="container-novel-right">
+                <h4>hoa như mộng</h4>
+                <h4>hoa như mộng</h4>
                 <h4>hoa như mộng</h4>
             </div>
         </div>
-    </section>
+    </div>
 </body>
 </html>
