@@ -1,48 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap");
-.container-lightnovel {
+.container {
+  padding: 4rem 7%;
+}
+.container .container-lightnovel {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   gap: 2rem;
 }
-.container-lightnovel .box {
+.container .container-lightnovel .box {
   border: 0.4rem solid #29d9d5;
   overflow: hidden;
   border-radius: 2rem;
 }
-.container-lightnovel .box img {
+.container .container-lightnovel .box img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
-
-.container-novel {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
-  gap: 2rem;
-  margin-top: 4rem;
-}
-.container-novel .container-novel-left {
-  background: green;
-  text-align: center;
-  border: 0.7rem solid yellow;
-  border-radius: 2rem;
-}
-.container-novel .container-novel-left h4 {
-  font-size: 2rem;
-  color: yellow;
-}
-.container-novel .container-novel-right {
-  background: palevioletred;
-  text-align: center;
-  border: 0.7rem solid yellow;
-  border-radius: 2rem;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
-  gap: 2rem;
-}
-.container-novel .container-novel-right h4 {
-  font-size: 2rem;
-  color: yellow;
 }
 
 * {
@@ -52,8 +25,6 @@
   outline: none;
   border: none;
   box-sizing: border-box;
-  text-transform: capitalize;
-  text-decoration: none;
 }
 
 html {
@@ -73,10 +44,6 @@ html::-webkit-scrollbar-thumb {
 
 body {
   background: black;
-}
-
-.container {
-  padding: 4rem 7%;
 }
 
 /*# sourceMappingURL=app.css.map */

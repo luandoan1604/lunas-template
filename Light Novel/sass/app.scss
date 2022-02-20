@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
 @import "./variable";
 @import "./lightnovel";
-@import "./novel";
 
 *{
     font-family: 'Open Sans', sans-serif;
@@ -10,8 +9,6 @@
     outline: none;
     border: none;
     box-sizing: border-box;
-    text-transform: capitalize;
-    text-decoration: none;
 }
 
 html{
@@ -31,8 +28,4 @@ html{
 
 body{
     background: $black;
-}
-
-.container{
-    padding: 4rem 7%;
 }
