@@ -338,13 +338,6 @@
             "chapter":"0"
         },
         {
-            "images":"s3058-89506c00-2c0d-4c22-b0ae-bd957d453ec1-m.jpg",
-            "name":"Hoshizora no Shita, Kimi no Koe dake wo Dakishimeru",
-            "link":"https://ln.hako.re/truyen/3058-hoshizora-no-shita-kimi-no-koe-dake-wo-dakishimeru",
-            "vol":"Oneshot",
-            "chapter":"0"
-        },
-        {
             "images":"s10480-e80041c8-9f8a-4659-a62e-ba4c2a6d1c63-m.jpg",
             "name":"Cho tới khi người bạn nữ từng nói \"Hãy mãi là bạn nhé?\", không còn là bạn của tôi nữa",
             "link":"https://ln.hako.re/truyen/10480-cho-toi-khi-nguoi-ban-nu-tung-noi-hay-mai-la-ban-nhe-khong-con-la-ban-cua-toi-nua",
@@ -417,6 +410,10 @@
         {
             "image": "s9805-42371ce7-e79e-4199-8a9e-fc0a3fafdacd-m.jpg",
             "link": "https://ln.hako.re/truyen/9805-gonin-hitoyaku-demo-kimi-ga-suki"
+        },
+        {
+            "image":"s3058-89506c00-2c0d-4c22-b0ae-bd957d453ec1-m.jpg",
+            "link":"https://ln.hako.re/truyen/3058-hoshizora-no-shita-kimi-no-koe-dake-wo-dakishimeru"
         },
         {
             "image":"",

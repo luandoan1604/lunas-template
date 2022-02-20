@@ -6,13 +6,14 @@
   outline: none;
   border: none;
   box-sizing: border-box;
+  text-transform: capitalize;
+  text-decoration: none;
 }
 
 html {
   font-size: 62.5%;
   overflow-x: hidden;
   scroll-behavior: smooth;
-  scroll-padding-top: 9rem;
 }
 html::-webkit-scrollbar {
   width: 1rem;
@@ -25,36 +26,60 @@ html::-webkit-scrollbar-thumb {
 }
 
 body {
-  background: black;
+  background: gray;
 }
 
 section {
-  padding: 3rem 9%;
+  padding: 3rem 7%;
 }
 
-.container .box-container {
+.container .box-container-lightnovel {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(23rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   gap: 2rem;
 }
-.container .box-container .box {
-  border-radius: 1rem;
+.container .box-container-lightnovel .box {
+  border-radius: 2rem;
   overflow: hidden;
   border: 0.4rem solid #29d9d5;
 }
-.container .box-container .box:hover img {
-  transform: scale(1.1);
-}
-.container .box-container .box .image {
-  height: 100%;
-  overflow: hidden;
+.container .box-container-lightnovel .box .image {
   width: 100%;
-  text-align: center;
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
 }
-.container .box-container .box .image img {
+.container .box-container-lightnovel .box .image img {
   height: 100%;
   width: 100%;
   object-fit: cover;
+}
+.container .box-container-novel {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  text-align: center;
+  border: 0.4rem solid yellow;
+  border-radius: 2rem;
+  overflow: hidden;
+}
+.container .box-container-novel .box-container-novel-left {
+  background: green;
+}
+.container .box-container-novel .box-container-novel-left h4 {
+  font-size: 2rem;
+  color: yellow;
+}
+.container .box-container-novel .box-container-novel-right {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+  background: palevioletred;
+}
+.container .box-container-novel .box-container-novel-right h4 {
+  font-size: 2rem;
+  color: yellow;
 }
 
 /*# sourceMappingURL=app.css.map */
