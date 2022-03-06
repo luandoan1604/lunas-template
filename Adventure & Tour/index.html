@@ -10,10 +10,9 @@
 </head>
 <body>
     <header class="header">
-        <a href="#" class="logo">
-            <i class="fas fa-hiking"></i>travel.
-        </a>
+        <a href="#" class="logo"><i class="fas fa-hiking"></i>travel.</a>
         <nav class="navbar">
+            <div id="nav-close" class="fas fa-times"></div>
             <a href="#home">home</a>
             <a href="#about">about</a>
             <a href="#shop">shop</a>
@@ -27,5 +26,15 @@
             <div id="search-btn" class="fas fa-search"></div>
         </div>
     </header>
+
+    <div class="search-form">
+        <div id="close-search" class="fas fa-times"></div>
+        <form action="">
+            <input type="search" name="" id="search-box" placeholder="search here...">
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+    </div>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
